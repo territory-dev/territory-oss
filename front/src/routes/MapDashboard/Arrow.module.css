@@ -1,0 +1,72 @@
+.lineRect {
+    border: 3px solid red;
+    position: absolute;
+    z-index: -1;
+}
+
+.path {
+    position: absolute;
+    overflow: visible;
+    z-index: -1;
+}
+
+.active {
+    z-index: 2;
+}
+
+.arrowhead {
+    position: absolute;
+    z-index: -1;
+}
+
+.arrowLeft {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: solid #A6A6A6;
+    border-right: solid transparent;
+    border-bottom: solid transparent;
+    border-left: solid #A6A6A6;
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;
+}
+
+.arrowRight {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: solid #A6A6A6;
+    border-left: solid #A6A6A6;
+    border-bottom: solid transparent;
+    border-right: solid transparent;
+    transform: rotate(135deg);
+    transform-origin: 0% 0%;
+}
+
+.arrowBottom {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: solid #A6A6A6;
+    border-right: solid transparent;
+    border-bottom: solid transparent;
+    border-left: solid #A6A6A6;
+    transform: rotate(-135deg);
+    transform-origin: 0% 0%;
+}
+
+.arrowTop {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: solid #A6A6A6;
+    border-right: solid transparent;
+    border-bottom: solid transparent;
+    border-left: solid #A6A6A6;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+}
+
+.wrapper {
+    pointer-events: none;
+}

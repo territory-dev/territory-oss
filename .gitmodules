@@ -1,0 +1,6 @@
+[submodule "indexers/python"]
+	path = indexers/python
+	url = git@github.com:territory-dev/territory-python-scanner.git
+[submodule "indexers/go"]
+	path = indexers/go
+	url = git@github.com:territory-dev/territory-go-scanner.git

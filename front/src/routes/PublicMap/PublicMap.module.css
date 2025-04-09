@@ -1,0 +1,22 @@
+.message {
+    font-size: 12px;
+    margin-right: 12px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.loader {
+    width: auto;
+}
+
+.hint {
+    font-size: 24px;
+    color: #A6A6A6;
+    margin-bottom: 16px;
+    margin-top: 64px;
+    max-width: 600px;
+    text-align: center;
+}

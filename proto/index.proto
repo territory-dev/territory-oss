@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package territory.index;
+
+import public "uim.proto";
+
+
+
+message Reference {
+    oneof href {
+        uint64 direct_node_link = 1;
+        uint64 node_id = 3;
+    }
+    string context = 2;
+    bool linked_via_sym = 4;
+    string use_path = 5;
+    Location use_location = 6;
+}
+
+
+message References {
+    uint64 node_id = 1;
+    uint32 offset = 3;
+    repeated Reference refs = 2;
+}
+
+
+message Implementation {
+    NodeIdWithOffsetHref href = 1;
+    string name = 2;
+}
+
+
+message Implementations {
+    uint64 node_id = 1;
+    uint32 offset = 2;
+    repeated Implementation impls = 3;
+}
+
+
+message Build {
+    string id = 1;
+    BlobSliceLoc nodemap_trie_root = 2;
+    BlobSliceLoc symmap_trie_root = 3;
+    BlobSliceLoc references_trie_root = 5;
+    uint64 repo_root_node_id = 4;
+}

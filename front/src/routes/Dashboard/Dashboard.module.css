@@ -1,0 +1,37 @@
+.mapsList > a {
+    font-size: 28px;
+    color: #CACACA;
+    border: 2px solid #CACACA;
+    width: 400px;
+    height: 64px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+}
+
+.mapsList > a:hover {
+    font-size: 28px;
+    color: white;
+    background-color: #CACACA;
+}
+
+.header {
+    font-size: 32px;
+    color: #A6A6A6;
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
+
+.commitTime {
+    font-weight: 600;
+    width: 100%;
+    text-align: right;
+}
+
+.subLabel {
+    font-size: 12px;
+}
+/* #CACACA; */
+/* #A6A6A6; */

@@ -1,0 +1,108 @@
+syntax = "proto3";
+
+option go_package = "github.com/territory-dev/territory/proto/go/;index";
+
+package territory.index;
+
+
+
+message BlobSliceLoc {
+    uint64 blob_id = 1;
+    uint64 start_offset = 2;
+    uint64 end_offset = 3;
+}
+
+
+message NodeIdWithOffsetHref {
+    uint64 node_id = 1;
+    uint32 offset = 2;
+}
+
+
+enum TokenType {
+    WS = 0;
+    Keyword = 1;
+    Identifier = 2;
+    Punctuation = 3;
+    Comment = 4;
+    Literal = 5;
+}
+
+
+message UniHref {
+    string path = 1;
+    uint32 offset = 2;
+}
+
+message Token {
+    uint32 offset = 1;
+    TokenType type = 2;
+    oneof href {
+        uint64 direct_node_link = 3;
+        uint64 node_id_ref = 6;
+        uint64 sym_id_ref = 7;
+        UniHref uni_href = 11;
+        NodeIdWithOffsetHref node_id_with_offset_ref = 13;
+    }
+    optional uint64 references = 4 [deprecated = true];
+    bool has_references = 5;
+    optional uint64 sym_id = 8;
+    optional uint32 real_offset = 9;
+    optional uint32 real_line = 10;
+    optional Location uim_location = 12;
+    optional bool uim_elided = 14;
+}
+
+
+message Location {
+    uint32 line = 1;
+    uint32 column = 2;
+    uint32 offset = 3;
+}
+
+
+enum NodeKind {
+    Definition = 0;
+    Directory = 1;
+    File = 2;
+    Structure = 3;
+    SourceFile = 4;
+    Class = 5;
+}
+
+
+message Node {
+    uint64 id = 1;
+    NodeKind kind = 2;
+    string path = 3;
+    optional uint64 container = 4;
+    Location start = 5;
+    string text = 6;
+    repeated Token tokens = 7;
+    optional string member_of = 8;
+    uint32 path_id = 9;
+    optional string uim_reference_context = 10;
+    optional uint32 uim_nest_level = 11;
+}
+
+enum IndexItemKind {
+    IISymbol = 0;
+    IIDirectory = 1;
+    IIFile = 2;
+    IIMacro = 3;
+}
+
+
+message IndexItem {
+    string key = 1;
+    oneof href {
+        uint64 direct_node_link = 2;
+        BlobSliceLoc floc = 6;
+        uint64 node_id = 7;
+        UniHref uni_href = 8;
+    }
+    IndexItemKind kind = 3;
+    optional string path = 4;
+    optional string type = 5;
+}
+

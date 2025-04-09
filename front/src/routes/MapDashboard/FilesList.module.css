@@ -1,0 +1,25 @@
+.wrapper {
+    height: 100%;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0 8px;
+    margin-top: 0;
+    /* margin: -8px; */
+    max-height: 1000px;
+    width: calc(100% - 16px);
+    overflow-y: scroll;
+}
+
+.listItem {
+    padding: 0;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.listItem:hover {
+    padding: 0;
+    color: red;
+    text-decoration: underline;
+}

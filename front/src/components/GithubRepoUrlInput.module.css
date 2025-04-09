@@ -1,0 +1,8 @@
+.GithubRepoUrlInput {
+    margin: 10px;
+}
+
+.GithubRepoUrlInput, .GithubRepoUrlInput input  {
+    font-size: 28px;
+    font-family: monospace, monospace;
+}

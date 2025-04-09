@@ -1,0 +1,12 @@
+[
+  {
+    "command": "clang -c -o mod1.o mod1.c",
+    "directory": "",
+    "file": "mod1.c"
+  },
+  {
+    "command": "clang -c -o dir/mod2.o dir/mod2.c",
+    "directory": "",
+    "file": "dir/mod2.c"
+  }
+]

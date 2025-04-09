@@ -1,0 +1,23 @@
+.wrap {
+    width: 100%;
+    max-width: 720px;
+}
+
+.wrap form {
+    text-align: center;
+}
+
+.go {
+    font-size: 28px;
+    padding: 0 20px;
+    margin: 10px;
+}
+
+.customBuild {
+    margin: 10px;
+    color: dimgray;
+}
+
+.customBuild a:link, .customBuild a:visited {
+    color: dimgray;
+}

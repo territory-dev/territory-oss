@@ -1,0 +1,35 @@
+.Layout {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.Scrollable {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.Background {
+    z-index: -3;
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background-color: #F9F7F7;
+}
+
+.FooterOverlay {
+    position: fixed;
+    bottom: 2px;
+    left: 10px;
+    color: #ababab;
+    font-size: 12px;
+}
+
+.FooterOverlay a:link, .FooterOverlay a:visited {
+    color: #ababab;
+    font-weight: bold;
+}

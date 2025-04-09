@@ -1,0 +1,19 @@
+.comment {
+    color: #5A8400;
+}
+
+.identifier {
+    color: #1100ff
+}
+
+.keyword {
+    color: #000000;
+}
+
+.literal {
+    color: #D00000;
+}
+
+.other {
+    color: #454545;
+}

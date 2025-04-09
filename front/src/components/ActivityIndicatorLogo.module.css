@@ -1,0 +1,25 @@
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+.activity {
+    filter: drop-shadow(0 0 0 rgb(89, 255, 156));
+    animation: ActivityPulse 5s ease infinite;
+    transition: filter 2s 4s;
+}
+
+@keyframes ActivityPulse {
+    0% {
+        filter: drop-shadow(0 0 0 rgb(89, 255, 156))
+    }
+    25% {
+        filter: drop-shadow(0 0 4px rgb(89, 255, 156))
+    }
+    50% {
+        filter: drop-shadow(0 0 4px rgb(255, 89, 228))
+    }
+    100% {
+        filter: drop-shadow(0 0 4px rgb(89, 96, 255))
+    }
+}

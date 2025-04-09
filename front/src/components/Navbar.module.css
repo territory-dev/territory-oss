@@ -1,0 +1,47 @@
+.Navbar {
+    width: calc(100vw - 32px);
+    height: 32px;
+    position: sticky;
+    top: 0;
+    background-color: grey;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    filter: drop-shadow(0 4px 4px #00000025);
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav > * {
+    margin-right: 16px;
+}
+
+
+.hamburger {
+    color: #CACACA;
+}
+
+.rightIcons {
+    display: flex;
+    align-items: center;
+}
+
+.repoName {
+    color: #aaaaaa;
+    font-size: 12px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.mapData {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}

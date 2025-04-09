@@ -1,0 +1,32 @@
+[package]
+name = "territory_core"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+serde = { version = "1.0.180", features = ["derive"] }
+serde_json = "1.0.104"
+serde_repr = "0.1.16"
+prost = "0.11.9"
+prost-types = "0.11.9"
+wasm-bindgen = { version = "0.2.87", features = ["serde", "serde-serialize", "serde_json"] }
+serde-wasm-bindgen = "0.5.0"
+serde_bytes = "0.11.12"
+gloo-utils = { version = "0.2.0", features = ["serde"] }
+smol_str = { version = "0.2.0", features = ["serde"] }
+rusqlite = { version = "0.30.0", optional = true }
+regex = "1.10.3"
+js-sys = "0.3.68"
+wasm-bindgen-futures = "0.4.41"
+similar = "2.2.1"
+
+
+[build-dependencies]
+prost-build = "0.11.9"
+
+[features]
+db = [ "rusqlite" ]

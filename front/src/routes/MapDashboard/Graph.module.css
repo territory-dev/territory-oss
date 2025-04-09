@@ -1,0 +1,25 @@
+.graph {
+    width: 100vw;
+    height: calc(100vh - 164px);
+    overflow: visible;
+    position: relative;
+}
+
+.wrapper {
+    overflow: visible;
+}
+
+.graphWrapper {
+    /* overflow: hidden; */
+    height: 100%;
+}
+
+.hint {
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    color: #A6A6A6;
+    font-size: 12px;
+}

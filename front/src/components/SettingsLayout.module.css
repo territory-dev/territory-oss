@@ -1,0 +1,24 @@
+.SettingsLayout {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+.Content {
+    flex-grow: 2;
+
+    margin: 40px;
+
+    min-height: 100vh;
+}
+
+.Content h1 {
+    margin-top: 0;
+}
+
+.settingsRouteInfo {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}

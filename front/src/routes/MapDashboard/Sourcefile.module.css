@@ -1,0 +1,18 @@
+.list {
+    list-style-type: none;
+    margin: 8px;
+    font-family: monospace, monospace;
+}
+
+.listItem {
+    padding: 0;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.listItem:hover {
+    padding: 0;
+    margin: 6px;
+    color: red;
+    text-decoration: underline;
+}

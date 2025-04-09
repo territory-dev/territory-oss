@@ -1,0 +1,45 @@
+.code {
+    font-family: monospace, monospace;
+    margin: 8px;
+    overflow-x: hidden;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.token {
+    white-space: nowrap;
+}
+
+.line {
+    position: relative;
+}
+
+.lineNum {
+    position: absolute;
+    left: 0px;
+    color: #A6A6A6;
+    font-weight: bold;
+    background-color: white;
+}
+
+.showLines .lineNum {
+    visibility: visible;
+    opacity: 1;
+}
+
+.noShowLines .lineNum {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: 900;
+}

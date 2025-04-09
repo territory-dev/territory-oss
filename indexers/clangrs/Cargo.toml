@@ -1,0 +1,46 @@
+[package]
+name = "clangrs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+territory_core = { path = "../../core", features = ["db"] }
+cscanner = { path = "../cscanner" }
+clang = { version = "2.0.0", features = ["clang_10_0", "runtime"] }
+clap = { version = "4.3.19", features = ["cargo", "derive"] }
+crossbeam-channel = "0.5.8"
+flate2 = "1.0.26"
+serde = { version = "1.0.180", features = ["derive"] }
+serde_json = "1.0.104"
+serde_repr = "0.1.16"
+similar = "2.2.1"
+prost = "0.11.9"
+testdir = "0.8.0"
+google-cloud-storage = { version = "0.15.0", optional = true }
+tokio = { version = "1.32.0", features = ["full"] }
+rand = "0.8.5"
+if_chain = "1.0.2"
+clang-sys = { version = "1.6.1", features = ["clang_16_0", "runtime"] }
+rusqlite = "0.30.0"
+lazy_static = "1.4.0"
+ring = "0.17.7"
+itertools = "0.12.1"
+proptest = "1.4.0"
+regex = "1.10.3"
+log = "0.4.21"
+simplelog = { version = "0.12.2", features = ["test"] }
+binaryornot = "1.0.0"
+
+[features]
+live_tests = []
+gcloud = ["dep:google-cloud-storage"]
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+
+[[bench]]
+name = "get_span"
+harness = false

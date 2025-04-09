@@ -1,0 +1,27 @@
+.content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.jobsHeader {
+    margin-top: 20px;
+    margin-left: 14px;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.commitMessage {
+    white-space: pre-wrap;
+}
+
+.refresh {
+    float: right;
+}
+
+.uploadInstructions {
+    border: 1px solid #aaa;
+    background-color: rgba(25, 118, 210, 0.08);
+    padding: 10px;
+}

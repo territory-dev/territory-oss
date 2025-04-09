@@ -1,0 +1,28 @@
+.modal {
+    position: absolute;
+    width: 600px;
+    top: 150px;
+    left: calc(50vw - 332px);
+    padding: 32px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+    background: black;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    content: '';
+}
+
+.closeIcon {
+    cursor: pointer;
+    position: relative;
+    top: -24px;
+    left: 300px;
+}

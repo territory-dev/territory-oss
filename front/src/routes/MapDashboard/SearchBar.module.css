@@ -1,0 +1,79 @@
+.searchbar {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar input {
+    height: 28px;
+    width: 500px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid #A6A6A6;
+}
+
+.dropdown {
+    position: absolute;
+    background: white;
+    box-shadow: 2px 6px 21px -2px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    min-width: 518px;
+    left: 0;
+    z-index: 11;
+    top: 100%;
+    max-height: 60vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.option {
+    padding: 16px 8px;
+    cursor: pointer;
+}
+
+.loadMore {
+    justify-content: center;
+    display: flex;
+    font-size: 14px;
+}
+
+.selected {
+    color: white;
+    background: blue;
+}
+
+.option em {
+    font-weight: bold;
+}
+
+.rootButton {
+    margin-left: 8px;
+    background: none;
+    cursor: pointer;
+    border: 1px solid #A6A6A6;
+    color: #A6A6A6;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.suggestionDetails {
+    text-align: right;
+    font-size: 50%;
+}
+
+.loaderOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

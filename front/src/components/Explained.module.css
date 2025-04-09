@@ -1,0 +1,31 @@
+.Explained {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    align-items: flex-start;
+}
+
+.content {
+    width: 500px;
+    flex-shrink: 0;
+}
+
+.explanation {
+    margin: 0 20px;
+    color: #4a4a4a;
+    border-left: 4px solid #b5b5b5;
+    padding-left:  8px;
+    max-width: 600px;
+    font-size: 14px;
+}
+
+.explanation p:first-of-type {
+    margin-top: 0;
+}
+.explanation p:last-of-type {
+    margin-bottom: 0;
+}
+
+.explanation a:link, .explanation a:visited {
+    color: inherit;
+}

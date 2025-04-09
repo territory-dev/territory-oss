@@ -1,0 +1,13 @@
+.message {
+    font-size: 12px;
+    margin-right: 12px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.loader {
+    width: auto;
+}

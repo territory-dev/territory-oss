@@ -1,0 +1,57 @@
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    right: -32px;
+    background: white;
+}
+
+.dropdown > div {
+    padding: 8px 12px;
+}
+
+.username {
+    font-weight: bold;
+    text-align: center;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link:hover {
+    color: white;
+    background-color: #CACACA;
+}
+
+.wrapper > div > img {
+    cursor: pointer;
+}
+
+.wrapper {
+    position: relative;
+    margin-right: 32px;
+}
+
+.opened::after {
+    content: ' ';
+    border: 5px solid #CACACA;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    right: -16px;
+    top: calc(50% - 7.5px);
+}
+
+.closed::after {
+    content: ' ';
+    border: 5px solid #CACACA;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: -16px;
+    top: calc(50% - 2.5px);
+}

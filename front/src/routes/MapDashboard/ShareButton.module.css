@@ -1,0 +1,49 @@
+.dropdown {
+    position: absolute;
+    background-color: white;
+    left: -150px;
+    width: 300px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.copyLink {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    justify-content: space-between;
+}
+
+.wrapper {
+    position: relative;
+    margin-right: 16px;
+}
+
+.textField {
+    width: 270px;
+}
+
+.icon {
+    cursor: pointer;
+    color: #A6A6A6;
+}
+
+.tooltip {
+    position: absolute;
+}
+
+.buttonIcon {
+    margin-right: 8px;
+}
+
+.button {
+    width: 100px;
+}
+
+.message {
+    font-size: 16px;
+    margin-bottom: 8px;
+}

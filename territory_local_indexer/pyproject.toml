@@ -1,0 +1,10 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "territory-local-indexer"
+dynamic = ["version", "description"]
+
+[project.scripts]
+ttix = "territory_local_indexer.cli:main"

@@ -1,0 +1,14 @@
+{
+  "name": "territory-schema-maps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "schema.mjs",
+  "scripts": {
+    "test": "node --test"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "joi": "^17.13.3"
+  }
+}

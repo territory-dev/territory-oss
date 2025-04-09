@@ -1,0 +1,52 @@
+**/.venv/*
+**/__pycache__
+indexers/clangrs/target
+core/target
+client/target
+client/python-src/territory_client/*.so
+target
+
+web-services/resolver/venv
+
+**/firebase-debug.log
+.firebase
+firestore-debug.log
+ui-debug.log
+
+#front
+# dependencies
+**/node_modules
+**/.pnp
+**/.pnp.js
+
+# testing
+/front/coverage
+**/proptest-regressions
+
+# production
+/front/build
+
+# misc
+**/.DS_Store
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+.vscode
+
+*/npm-debug.log*
+*/yarn-debug.log*
+*/yarn-error.log*
+
+web-services/resolver/blobs/
+
+landing/terms-of-service.html
+
+territory_upload.tar.gz
+
+indexers/go/pb/*.pb.go
+
+indexers/go/goscan-*
+indexers/go/goscan
+front/.sentryclirc
+ops/gcloud/pypirc

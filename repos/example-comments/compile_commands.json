@@ -1,0 +1,7 @@
+[
+  {
+    "command": "clang -c -o mod1.o mod1.c",
+    "directory": "",
+    "file": "mod1.c"
+  }
+]

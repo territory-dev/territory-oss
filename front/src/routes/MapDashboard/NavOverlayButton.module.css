@@ -1,0 +1,9 @@
+.NavOverlayButton {
+    background: #fff;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+    filter: drop-shadow(0 4px 4px #00000025);
+    border: none;
+    color: #A6A6A6;
+}

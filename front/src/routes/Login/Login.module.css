@@ -1,0 +1,23 @@
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    width: 100wv;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 128px;
+    margin-bottom: 64px;
+}
+
+.title > svg {
+    height: 100px;
+}
+
+.gdpr {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+}

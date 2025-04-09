@@ -1,0 +1,40 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    top: 16px;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #CACACA;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.sm {
+    width: 36px;
+    height: 36px;
+}
+
+.xs {
+    width: 14px;
+    height: 14px;
+    border-width: 2px;
+}
+
+@keyframes rotation {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+} 

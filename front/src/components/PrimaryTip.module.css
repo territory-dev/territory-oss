@@ -1,0 +1,30 @@
+.PrimaryTipWrapper {
+}
+
+.PrimaryTip {
+    color: #A6A6A6;
+    position: absolute;
+    top: 60px;
+    font-size: 12px;
+    overflow: visible;
+    white-space: nowrap;
+
+    border-left: 1px solid #cdcdcd;
+    height: 40px;
+    width: 0;
+    padding-left: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.Shortcut {
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    text-align: center;
+}

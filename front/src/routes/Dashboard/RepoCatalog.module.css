@@ -1,0 +1,77 @@
+.repoCatalog {
+    width: 100%;
+    max-width: 720px;
+}
+
+.repoCatalog ul {
+    margin: 0; padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.repoCatalog li {
+    margin: 0; padding: 0;
+    margin-right: 10px;
+    list-style-type: none;
+
+    background: white;
+    width: calc( (100% / 3) - 20px );
+}
+
+.repoCatalog a:link, .repoCatalog a:visited {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* height: 50px; */
+    width: 100%;
+    text-align: left;
+    /* font-size: 20px; */
+    background: white;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+}
+
+.repoCatalog a:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.buildsNote {
+    margin: 40px;
+    font-size: 24px;
+    color: dimgray;
+}
+
+.buildsNote a:link, .buildsNote a:visited {
+    color: dimgray;
+}
+
+.list {
+}
+
+.item {
+}
+
+
+.name {width: 100%;}
+.shareIcon {
+    color: #aaaaaa;
+    position: absolute;
+    right: 20px;
+}
+.origin {
+    font-size: 14px;
+    font-family: monospace, monospace;
+    color: #aaaaaa;
+}
+.by {
+    font-size: 14px;
+    color: #aaaaaa;
+}
+.byName {
+    font-size: 14px;
+    color: #000;
+}

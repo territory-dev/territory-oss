@@ -1,0 +1,38 @@
+.mapItem {
+    display: block !important;
+}
+
+
+.mapName {
+}
+
+
+.mapDetails {
+    display: flex;
+}
+
+
+.mapLastChanged {
+    min-width: 120px;
+}
+
+
+.mapRepoName {
+}
+
+
+.mapSharingState {
+    flex: 1;
+    text-align: right;
+}
+
+.mapDetails > div {
+    color: #aaaaaa;
+    font-size: 12px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.shareIcon {
+    margin-left: 5px;
+}

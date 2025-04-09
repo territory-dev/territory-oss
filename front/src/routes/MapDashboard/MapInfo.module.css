@@ -1,0 +1,36 @@
+.repoName {
+    color: #aaaaaa;
+    font-size: 12px;
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.mapData {
+}
+
+.icon {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.textField {
+    padding-bottom: 0;
+}
+
+.mapNameWrapper {
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+
+.mapNameText {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.loader {
+    width: auto;
+}

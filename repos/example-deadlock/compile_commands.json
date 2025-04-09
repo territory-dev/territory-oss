@@ -1,0 +1,52 @@
+[
+  {
+    "command": "clang -c -o main.o mod1.c",
+    "directory": "",
+    "file": "mod1.c"
+  },
+  {
+    "command": "clang -c -o main.o mod2.c",
+    "directory": "",
+    "file": "mod2.c"
+  },
+  {
+    "command": "clang -c -o main.o mod3.c",
+    "directory": "",
+    "file": "mod3.c"
+  },
+  {
+    "command": "clang -c -o main.o mod4.c",
+    "directory": "",
+    "file": "mod4.c"
+  },
+  {
+    "command": "clang -c -o main.o mod5.c",
+    "directory": "",
+    "file": "mod5.c"
+  },
+  {
+    "command": "clang -c -o main.o mod6.c",
+    "directory": "",
+    "file": "mod6.c"
+  },
+  {
+    "command": "clang -c -o main.o mod7.c",
+    "directory": "",
+    "file": "mod7.c"
+  },
+  {
+    "command": "clang -c -o main.o mod8.c",
+    "directory": "",
+    "file": "mod8.c"
+  },
+  {
+    "command": "clang -c -o main.o mod9.c",
+    "directory": "",
+    "file": "mod9.c"
+  },
+  {
+    "command": "clang -c -o main.o mod10.c",
+    "directory": "",
+    "file": "mod10.c"
+  }
+]

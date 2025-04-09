@@ -1,0 +1,16 @@
+.tokenList dl {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 10px;
+}
+
+.tokenList dt {
+  font-weight: bold;
+  grid-column: 1;
+    color: #aaaaaa;
+}
+
+.tokenList dd {
+  margin: 0;
+  grid-column: 2;
+}

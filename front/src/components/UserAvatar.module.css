@@ -1,0 +1,12 @@
+.avatar {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.avatar > img {
+    width: 36px;
+    height: 36px;
+}

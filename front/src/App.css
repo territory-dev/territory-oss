@@ -1,0 +1,20 @@
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #A6A6A6;
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+* {
+    overscroll-behavior: contain;
+}

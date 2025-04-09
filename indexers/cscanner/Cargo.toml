@@ -1,0 +1,21 @@
+[package]
+name = "cscanner"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+territory_core = { path = "../../core", features = [] }
+clang = { version = "2.0.0", features = ["clang_10_0", "runtime"] }
+clap = { version = "4.3.19", features = ["cargo", "derive"] }
+serde = { version = "1.0.180", features = ["derive"] }
+serde_json = "1.0.104"
+serde_repr = "0.1.16"
+if_chain = "1.0.2"
+clang-sys = { version = "1.6.1", features = ["clang_16_0", "runtime"] }
+itertools = "0.12.1"
+lazy_static = "1.4.0"
+testdir = "0.8.0"
+rand = "0.8.5"
+nix = { version = "0.29.0", features = ["user"] }
